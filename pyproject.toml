@@ -1,0 +1,35 @@
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hyperlog-tools"
+version = "0.1.0"
+description = "Reusable Python utilities by Hyper Source"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "Hyper Source" }
+]
+keywords = [
+    "python",
+    "hyperlog",
+    "logging",
+    "error-handling",
+    "utilities"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: OS Independent"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hyperlog"]
